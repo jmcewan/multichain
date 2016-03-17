@@ -11,7 +11,6 @@ RUN     apk update \
         && tar -xvzf multichain-1.0-alpha-18.tar.gz \
         && cd multichain-1.0-alpha-18 \
         && mv multichaind multichain-cli multichain-util /usr/local/bin \
-        && cd /tmp \
         && rm -Rf multichain*
 
 CMD ["/bin/bash"]
