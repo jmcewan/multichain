@@ -1,4 +1,4 @@
-FROM jmcewan/multichainbase
+FROM quay.io/jamesmcewan/multichainbase
 MAINTAINER James McEwan
 
 RUN multichain-util create dockerchain
