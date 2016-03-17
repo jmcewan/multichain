@@ -3,7 +3,7 @@ MAINTAINER James McEwan
 
 RUN     apk update \
         && apk upgrade \
-        && apk install wget
+        && apk add wget bash \
         && rm -rf /var/cache/apk/* \
         && cd /tmp \
         && wget http://www.multichain.com/download/multichain-1.0-alpha-18.tar.gz \
