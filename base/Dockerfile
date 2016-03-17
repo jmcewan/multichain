@@ -1,8 +1,7 @@
 FROM alpine:3.3
 MAINTAINER James McEwan
 
-RUN
-        apk update \
+RUN     apk update \
         && apk upgrade \
         && rm -rf /var/cache/apk/* \
         && cd /tmp \
