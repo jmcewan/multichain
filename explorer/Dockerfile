@@ -1,11 +1,12 @@
-FROM 
+FROM jamesmcewan/multichainbase
 MAINTAINER James McEwan
 
-RUN apt-get update \
-        && apt-get install -q -y python python-dev python-pip sqlite3 libsqlite3-dev \
+RUN apk update \
+        && apk upgrade \
+        && apk install python python-dev python-pip sqlite3 libsqlite3-dev \
         && pip install pycrypto \
-        && apt-get clean \
-        && rm -rf /var/lib/apt/lists/*
+        && rm -rf /var/cache/apk/* \
+        && cd /tmp \
 
 RUN cd /root \
     && wget https://github.com/MultiChain/multichain-explorer/archive/master.tar.gz \
