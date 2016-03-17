@@ -1,4 +1,4 @@
-FROM jamesmcewan/multichainbase
+FROM quay.io/jamesmcewan/multichainbase
 MAINTAINER James McEwan
 
 RUN apk update \
