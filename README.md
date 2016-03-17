@@ -1,2 +1,2 @@
 # multichain
-experiments with multichain blockchain
+experiments with multichain blockchain, borrows heavily from https://github.com/Kunstmaan/docker-multichain 
