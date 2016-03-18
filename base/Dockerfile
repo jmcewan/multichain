@@ -13,7 +13,7 @@ RUN     apk update \
         && wget http://www.multichain.com/download/multichain-1.0-alpha-18.tar.gz \
         && tar -xvzf multichain-1.0-alpha-18.tar.gz \
         && cd multichain-1.0-alpha-18 \
-        && mv multichaind multichain-cli multichain-util /usr/local/bin \
+        && mv multichaind multichain-cli multichain-util root/ \
         && cd /tmp \
         && rm -Rf multichain*
 
