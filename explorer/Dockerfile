@@ -6,7 +6,6 @@ RUN apk update \
         && apk install python python-dev python-pip sqlite3 libsqlite3-dev \
         && pip install pycrypto \
         && rm -rf /var/cache/apk/* \
-        && cd /tmp \
 
 RUN cd /root \
     && wget https://github.com/MultiChain/multichain-explorer/archive/master.tar.gz \
