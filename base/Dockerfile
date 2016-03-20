@@ -9,7 +9,8 @@ RUN     apk update \
         && apk add wget \
         && apk add bash \
         && rm -rf /var/cache/apk/* \
-        && cd /tmp \
+        
+RUN     cd /tmp \
         && wget http://www.multichain.com/download/multichain-1.0-alpha-18.tar.gz \
         && tar -xvzf multichain-1.0-alpha-18.tar.gz \
         && cd multichain-1.0-alpha-18 \
@@ -18,3 +19,4 @@ RUN     apk update \
         && rm -Rf multichain*
 
 ##CMD ["/bin/bash"]
+CMD[/]
