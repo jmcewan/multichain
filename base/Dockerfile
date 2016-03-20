@@ -14,7 +14,7 @@ RUN     cd /tmp \
         && wget http://www.multichain.com/download/multichain-1.0-alpha-18.tar.gz \
         && tar -xvzf multichain-1.0-alpha-18.tar.gz \
         && cd multichain-1.0-alpha-18 \
-        && mv multichaind multichain-cli multichain-util root/ \
+        && mv multichaind multichain-cli multichain-util /usr/bin/ \
         && cd /tmp \
         && rm -Rf multichain*
 
