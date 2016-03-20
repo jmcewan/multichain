@@ -3,7 +3,7 @@ MAINTAINER James McEwan
 
 RUN apk update \
         && apk upgrade \
-        && apk install python python-dev python-pip sqlite3 libsqlite3-dev \
+        && apk add python python-dev python-pip sqlite3 libsqlite3-dev \
         && pip install pycrypto \
         && rm -rf /var/cache/apk/* \
 
