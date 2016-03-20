@@ -1,5 +1,5 @@
 FROM quay.io/jamesmcewan/multichainbase
-MAINTAINER
+MAINTAINER jamesmcewan
 
 ADD ./connect-node.sh /root/connect-node.sh
 
