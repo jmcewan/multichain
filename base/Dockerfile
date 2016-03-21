@@ -9,6 +9,7 @@ RUN     apk update \
         && apk add wget \
         && apk add bash \
         && apk add tar \
+        && apk add awk \
         && rm -rf /var/cache/apk/* \
         
 RUN     cd /tmp \
