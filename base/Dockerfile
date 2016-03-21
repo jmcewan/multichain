@@ -8,6 +8,7 @@ RUN     apk update \
         && apk add ca-certificates \
         && apk add wget \
         && apk add bash \
+        && apk add tar \
         && rm -rf /var/cache/apk/* \
         
 RUN     cd /tmp \
