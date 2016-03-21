@@ -12,6 +12,7 @@ services:
         environment:
             VIRTUAL_HOST: mulichain-master.docker
             VIRTUAL_PORT: 8000
+    
     explorer:
         image: quay.io/jamesmcewan/multichainexplorer
         build: ./explorer
@@ -26,6 +27,7 @@ services:
             VIRTUAL_PORT: 2750
         links:
             - masternode
+   
     slavenode1:
         image: quay.io/jamesmcewan/multichainslave
         build: ./slave
