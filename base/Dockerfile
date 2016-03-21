@@ -16,7 +16,7 @@ RUN     cd /tmp \
         && tar -xvzf multichain-1.0-alpha-18.tar.gz \
         && cd multichain-1.0-alpha-18 \
         && mv multichaind multichain-cli multichain-util /usr/bin/ \
-        && cd /tmp \
+       ## && cd /tmp \
         && rm -Rf multichain*
 
 ##CMD ["/bin/bash"]
