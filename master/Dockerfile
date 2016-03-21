@@ -1,7 +1,7 @@
 FROM quay.io/jamesmcewan/multichainbase
 MAINTAINER James McEwan
 
-RUN /usr/bin/multichain-util create dockerchain
+RUN multichain-util create dockerchain
 
 ADD ./params.dat /root/.multichain/dockerchain/params.dat
 ADD ./multichain.conf /root/.multichain/dockerchain/multichain.conf
