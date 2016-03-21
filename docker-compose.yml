@@ -13,8 +13,7 @@ services:
             VIRTUAL_HOST: mulichain-master.docker
             VIRTUAL_PORT: 8000
     explorer:
-       # image: quay.io/jamesmcewan/multichainexplorer
-       image: kunstmaan/explorer-multichain
+        image: kunstmaan/explorer-multichain  #own image fails to build
         build: ./explorer
         stdin_open: true
         tty: true
