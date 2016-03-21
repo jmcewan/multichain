@@ -1,7 +1,7 @@
 FROM alpine:3.3
 MAINTAINER James McEwan
 
-ENV 
+##ENV 
 
 RUN     apk update \
         && apk upgrade \
