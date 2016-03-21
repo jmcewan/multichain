@@ -20,5 +20,5 @@ RUN     cd /tmp \
        ## && cd /tmp \
         && rm -Rf multichain*
 
-##CMD ["/bin/bash"]
+CMD ["/bin/bash"]
 ##CMD[/]
