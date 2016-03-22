@@ -2,6 +2,7 @@ FROM quay.io/jamesmcewan/multichainbase
 MAINTAINER James McEwan
 
 #CMD ["multichain-util", "create", "dockerchain"]
+RUN print hellooooooooooo
 RUN multichain-util create dockerchain
 
 ADD ./params.dat /root/.multichain/dockerchain/params.dat
